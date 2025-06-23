@@ -1,0 +1,306 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Creative Works</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Carousel container and slides styles - overrides and additions */
+			.carousel {
+				position: relative;
+				overflow: hidden;
+				width: 100%;
+				height: 250px; /* Fixed height for Instagram aspect ratio */
+				border-radius: 12px;
+				box-shadow: inset 0 0 20px #ffffff7c;
+				margin-bottom: 1rem;
+				background-color: #111;
+			}
+			.carousel .track {
+				display: flex;
+				transition: transform 0.5s ease-in-out;
+				height: 100%;
+			}
+			.carousel .slide {
+				flex: 0 0 100%;
+				height: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.carousel .slide img {
+				max-height: 100%;
+				max-width: 100%;
+				object-fit: cover; /* Changed to cover for Instagram-like aspect ratio */
+				border-radius: 10px;
+				user-select: none;
+				pointer-events: none;
+				box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+			}
+
+			.carousel-arrow {
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				background: rgba(255, 255, 255, 0);
+				border: none;
+				color: #ffffff; /* Blue color for arrows */
+				width: 40px;
+				height: 40px;
+				border-radius: 50%; /* Ensures circular shape */
+				cursor: pointer;
+				transition: background-color 0.3s ease, transform 0.2s ease;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-size: 20px;
+				user-select: none;
+				z-index: 10;
+			}
+			.carousel-arrow:hover, .carousel-arrow:focus {
+				background: rgba(255, 255, 255, 0);
+				outline: none;
+				transform: translateY(-50%) scale(1.1);
+			}
+			.carousel-arrow:active {
+				transform: translateY(-50%) scale(0.95);
+			}
+			.carousel-arrow.left {
+				left: 10px;
+			}
+			.carousel-arrow.right {
+				right: 10px;
+			}
+
+			/* Responsive tweak */
+			@media screen and (max-width: 736px) {
+				.carousel {
+					height: 180px;
+					margin-bottom: 12px;
+				}
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Header -->
+			<header id="header">
+				<div class="inner">
+
+					<!-- Logo -->
+					<a href="index.html" class="logo">
+						<span class="symbol"><img src="images/logo.svg" alt="Company logo showing stylized R and K letters in contemporary style" /></span><span class="title">Roger's (WIP)</span>
+					</a>
+
+					<!-- Nav -->
+					<nav>
+						<ul>
+							<li><a href="#menu">Menu</a></li>
+						</ul>
+					</nav>
+
+				</div>
+			</header>
+
+			<!-- Menu -->
+			<nav id="menu">
+				<h2>Menu</h2>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="cw.html">Creative Works</a></li>
+				</ul>
+			</nav>
+
+			<!-- Main -->
+			<div id="main">
+				<div class="inner">
+					<header>
+						<h1><a href="about.html">Roger KH Lo</a></h1>
+						<h3>Engineer | Creative | Lifelong Learner</h3>
+					</header>
+					<section class="tiles">
+						<article>
+							<div class="carousel" aria-label="Sports image carousel" tabindex="0">
+								<button class="carousel-arrow left" aria-label="Previous image">&#8249;</button>
+								<div class="track">
+									<div class="slide"><img src="images/cw/sp1.webp" alt="" loading="lazy" /></div>
+									<div class="slide"><img src="images/cw/sp2.webp" alt="" loading="lazy" /></div>
+									<div class="slide"><img src="images/cw/sp3.webp" alt="" loading="lazy" /></div>
+									<div class="slide"><img src="images/cw/sp4.webp" alt="" loading="lazy" /></div>
+									<div class="slide"><img src="images/cw/sp5.webp" alt="" loading="lazy" /></div>
+									<div class="slide"><img src="images/cw/sp6.webp" alt="" loading="lazy" /></div>
+									<div class="slide"><img src="images/cw/sp7.webp" alt="" loading="lazy" /></div>
+									<div class="slide"><img src="images/cw/sp8.webp" alt="" loading="lazy" /></div>
+
+								</div>
+								<button class="carousel-arrow right" aria-label="Next image">&#8250;</button>
+							</div>
+							<h1><a href="https://www.instagram.com/p/Cx4KhcmP0Rk/?igsh=MXR3M2JkZGVibTV3Mg=="style="text-align: center; display: block;">Sports</a></h1>
+							<div class="content"style="text-align: center;">
+								<p>Shutter Speed - Fast Shutter, Freeze Motion.</p>
+							</div>
+						</article>
+						<article>
+							<div class="carousel" aria-label="Events image carousel" tabindex="0">
+								<button class="carousel-arrow left" aria-label="Previous image">&#8249;</button>
+								<div class="track">
+									<div class="slide"><img src="images/cw/e1.jpg" alt="" loading="lazy" /></div>
+									<div class="slide"><img src="images/cw/e2.jpg" alt="" loading="lazy" /></div>
+									<div class="slide"><img src="images/cw/e3.jpg" alt="" loading="lazy" /></div>
+									<div class="slide"><img src="images/cw/e4.jpg" alt="" loading="lazy" /></div>
+									<div class="slide"><img src="images/cw/e5.jpg" alt="" loading="lazy" /></div>
+									<div class="slide"><img src="images/cw/e6.jpg" alt="" loading="lazy" /></div>
+									<div class="slide"><img src="images/cw/e7.jpg" alt="" loading="lazy" /></div>
+									<div class="slide"><img src="images/cw/e8.jpg" alt="" loading="lazy" /></div>
+
+								</div>
+								<button class="carousel-arrow right" aria-label="Next image">&#8250;</button>
+							</div>
+							<h1><a href="https://www.instagram.com/p/C0Bsq5dv4kT/?igsh=dW56Z2VjMjE3dWZh"style="text-align: center; display: block;">Events</a></h1>
+							<div class="content"style="text-align: center;">
+								<p>Flexible ISO - Adapt to changing light with minimal noise. </p>
+							</div>
+						</article>
+						<article>
+							<div class="carousel" aria-label="Studio image carousel" tabindex="0">
+								<button class="carousel-arrow left" aria-label="Previous image">&#8249;</button>
+								<div class="track">
+									<div class="slide"><img src="images/cw/s1.webp" alt="" loading="lazy" /></div>
+									<div class="slide"><img src="images/cw/s2.webp" alt="" loading="lazy" /></div>
+									<div class="slide"><img src="images/cw/s3.webp" alt="" loading="lazy" /></div>
+									<div class="slide"><img src="images/cw/s4.webp" alt="" loading="lazy" /></div>
+									<div class="slide"><img src="images/cw/s5.webp" alt="" loading="lazy" /></div>
+									<div class="slide"><img src="images/cw/s6.jpg" alt="" loading="lazy" /></div>
+									<div class="slide"><img src="images/cw/s7.jpg" alt="" loading="lazy" /></div>
+
+								</div>
+								<button class="carousel-arrow right" aria-label="Next image">&#8250;</button>
+							</div>
+							<h1><a href="https://www.instagram.com/p/CzjSvrRvnPx/?igsh=ZzU3dnlnbWdkcXI4"style="text-align: center; display: block;">Studio</a></h1>
+							<div class="content"style="text-align: center;">
+								<p>Flash Control - Precise Flash, Play with Lighting & Shadows.</p>
+							</div>
+						</article>
+						<article>
+							<div class="carousel" aria-label="Stage image carousel" tabindex="0">
+								<button class="carousel-arrow left" aria-label="Previous image">&#8249;</button>
+								<div class="track">
+									<div class="slide"><img src="images/cw/st1.jpg" alt="" loading="lazy" /></div>
+									<div class="slide"><img src="images/cw/st2.jpg" alt="" loading="lazy" /></div>
+									<div class="slide"><img src="images/cw/st3.jpg" alt="" loading="lazy" /></div>
+									<div class="slide"><img src="images/cw/st4.jpg" alt="" loading="lazy" /></div>
+									<div class="slide"><img src="images/cw/st5.jpg" alt="" loading="lazy" /></div>
+									<div class="slide"><img src="images/cw/st6.jpg" alt="" loading="lazy" /></div>
+									<div class="slide"><img src="images/cw/st7.jpg" alt="" loading="lazy" /></div>
+
+								</div>
+								<button class="carousel-arrow right" aria-label="Next image">&#8250;</button>
+							</div>
+							<h1><a href="https://www.instagram.com/p/CzjSvrRvnPx/?igsh=ZzU3dnlnbWdkcXI4"style="text-align: center; display: block;">Stage</a></h1>
+							<div class="content"style="text-align: center;">
+								<p>Exposure Compensation - Balance Light & Dark, Preserve Subject Detail.</p>
+							</div>
+						</article>
+						<article>
+							<h1><a href="about.html" style="text-align: center; display: block;">More</a></h1>
+							<div class="content" style="text-align: center;">
+								<p>Videos, Drawings, Models ,and More. Follow Me on Socials</p>
+							</div>
+						</article>
+					</section>
+				</div>
+			</div>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<section>
+						<h2>Get in Touch</h2>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/rogerkhlo" class="icon brands style2 fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://www.instagram.com/rkhl.ol" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://www.github.com/rogerkhlo" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+							<li><a href="mailto:roger.rlkh@gmail.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+					</section>
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+		<script>
+			// JS Carousel for all .carousel elements on page
+			document.querySelectorAll('.carousel').forEach((carousel) => {
+				const track = carousel.querySelector('.track');
+				const slides = Array.from(track.children);
+				const prevBtn = carousel.querySelector('.carousel-arrow.left');
+				const nextBtn = carousel.querySelector('.carousel-arrow.right');
+
+				let currentIndex = 0;
+
+				const updateSlidePositions = () => {
+					const width = carousel.offsetWidth;
+					slides.forEach((slide, index) => {
+						slide.style.left = (width * index) + 'px';
+					});
+				};
+				updateSlidePositions();
+
+				const moveToSlide = (index) => {
+					const width = carousel.offsetWidth;
+					track.style.transform = 'translateX(-' + (width * index) + 'px)';
+					currentIndex = index;
+					updateButtons();
+				};
+
+				const updateButtons = () => {
+					if (prevBtn) {
+						prevBtn.disabled = currentIndex === 0;
+						prevBtn.style.opacity = prevBtn.disabled ? '0.3' : '1';
+						prevBtn.style.cursor = prevBtn.disabled ? 'default' : 'pointer';
+					}
+					if (nextBtn) {
+						nextBtn.disabled = currentIndex === slides.length - 1;
+						nextBtn.style.opacity = nextBtn.disabled ? '0.3' : '1';
+						nextBtn.style.cursor = nextBtn.disabled ? 'default' : 'pointer';
+					}
+				};
+
+				moveToSlide(0);
+
+				if (prevBtn) {
+					prevBtn.addEventListener('click', () => {
+						if (currentIndex > 0) moveToSlide(currentIndex - 1);
+					});
+				}
+				if (nextBtn) {
+					nextBtn.addEventListener('click', () => {
+						if (currentIndex < slides.length - 1) moveToSlide(currentIndex + 1);
+					});
+				}
+
+				window.addEventListener('resize', () => {
+					updateSlidePositions();
+					moveToSlide(currentIndex);
+				});
+			});
+		</script>
+	</body>
+</html>
