@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>210725</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="../index.html" class="logo">
+									<span class="symbol"><img src="../images/logo.svg" alt="" /></span><span class="title">Roger's (WIP)</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="../index.html">Home</a></li>
+							<li><a href="../about.html">About</a></li>
+							<li><a href="../projects.html">Projects</a></li>
+							<li><a href="../cw.html">Creative Works</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+				<div id="main">
+				<div class="inner">
+					<h1>Reservation Automation – Telegram Bot</h1>
+					<span class="image main"><img src="../images/projects/210725/210725.png" alt="Telegram Bot Screenshot" /></span>
+
+					<p>
+					A lightweight, automated reservation system designed for small food & beverage businesses that manage bookings through Telegram. 
+					This project simplifies reservation handling using Google Apps Script and Google Sheets to record, manage, and track customer bookings in real-time.
+					</p>
+
+					<h3>Webhook Integration</h3>
+					<p>
+					The bot is exposed via a secure HTTPS webhook endpoint in Google Apps Script. Incoming updates from Telegram are delivered to the `doPost(e)` function. 
+					The script parses the JSON payload, executes commands (<code>/view &lt;date&gt;</code>,<code>/cancel &lt;phone&gt; &lt;date&gt;</code>), and replies via the Bot API.
+					</p>
+
+					<h3>Objectives</h3>
+					<p>
+					The goal was to streamline the manual reservation process by reducing reliance on paper logs or inconsistent messaging. The project enables staff to add, cancel, or view reservations directly from Telegram using intuitive command-based inputs. All data is securely logged and organized by month inside Google Sheets.
+					</p>
+
+					<h3>Features</h3>
+					<ul>
+					<li>Flexible date inputs (e.g., <code>today</code>, <code>21/7</code>, <code>7 Aug</code>, <code>Friday</code>)</li>
+					<li>Country Code Handling.</li>
+					<li>Telegram Bot integration with Google Apps Script backend</li>
+					<li>Data stored and organised monthly in Google Sheets</li>
+					<li>Commands:
+						<ul>
+						<li><code>/view &lt;date&gt;</code> – See reservations for a specific date</li>
+						<li><code>/cancel &lt;phone&gt; &lt;date&gt;</code> – Cancel bookings</li>
+						</ul>
+					</li>
+					</ul>
+
+					<h3>Outcome</h3>
+					<p>
+					The solution successfully automated daily reservation tracking with <strong>zero deployment cost</strong>. Reduce double-bookings and last-minute confusion, with a friendly command interface, minimal training required to adopt the system.
+					</p>
+
+					<h3>Future Enhancements</h3>
+					<ul>
+					<li>Dialogflow integration for natural language understanding - intent matching</li>
+					<li>Voice/call support for reservation via Twilio</li>
+					<li>Public-facing booking page for customers</li>
+					<li>Dashboard for reservation trends and analytics</li>
+					</ul>
+				</div>
+				</div>
+
+
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Get in Touch</h2>
+								<ul class="icons">
+									<li><a href="https://www.linkedin.com/in/rogerkhlo" class="icon brands style2 fa-linkedin"><span class="label">Linkedin</span></a></li>
+									<li><a href="https://www.instagram.com/rkhl.ol" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="https://www.github.com/rogerkhlo" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://youtu.be/PJe5-e3IJ3w?feature=shared" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+									<li><a href="mailto:roger.rlkh@gmail.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy;<a href="https://youtu.be/AI29dHDkJh4?feature=shared">Untitled 2025.</a> All rights reserved</li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
